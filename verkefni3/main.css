@@ -1,0 +1,63 @@
+body, html {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 10% auto 10%;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "sect1 main sect2"
+    "footer footer footer";
+}
+
+
+
+header {
+    grid-area: header;
+
+}
+header h1{font-size: 3em; font-family: fantasy; text-align: center;color: brown}
+header a{display: block; text-align: center;}
+nav { grid-area:nav;  
+ padding: 2em; }
+
+aside {
+    grid-area: sect1;
+;
+}
+
+
+main {
+    grid-area: main;
+; padding:15px;
+}
+article {grid-area: sect2; 
+;padding: 15px}
+footer {
+    grid-area: footer;
+
+}
+
+
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul{
+  list-style: none;
+  margin: 1em 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+blockquote{text-align: center; padding: 13px; border: 1px solid;}

@@ -1,0 +1,62 @@
+body, html {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 12% auto 10%;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+
+
+header {
+    grid-area: header;background-image: linear-gradient(to right,green, red,orange,yellow,green,blue,indigo,violet,green);
+}
+header h1{font-size: 3em; font-family: 'Shadows Into Light', cursive;font-size: ; text-align: center;color: white}
+header a{display: block; text-align: center;}
+nav { grid-area:nav;  
+ padding: 2em;background-image: linear-gradient(to right, green,yellow,green);}
+
+main {
+    grid-area: main;
+; padding:15px; background-image: radial-gradient(circle, red, yellow, green);font-family: 'Shadows Into Light', cursive;
+}
+footer {
+    grid-area: footer;background-image: linear-gradient(to right, green,yellow,green);
+
+}
+
+
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; 
+}
+
+footer ul{
+  list-style: none;
+  margin: 1em 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+blockquote{text-align: center; padding: 13px; border: 1px solid; font-family: serif;}
+
+body{background-color: green}
+
+h3{text-align: center;
+}
+
+main ul{text-align: center;list-style: none}
+

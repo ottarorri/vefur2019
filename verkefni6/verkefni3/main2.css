@@ -1,0 +1,70 @@
+body, html {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 10% auto 10%;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main article"
+    "footer footer footer";
+}
+
+
+
+header {
+    grid-area: header;  background-image: linear-gradient(orange, yellow);
+
+}
+header h1{font-size: 3em; font-family: fantasy; text-align: center;color: black}
+header a{display: block; text-align: center;}
+nav { grid-area:nav;  
+ padding: 2em;background-image: linear-gradient(yellow, orange); }
+
+aside {
+    grid-area: aside;
+;
+}
+
+
+main {
+    grid-area: main;
+; padding:15px; background-image: linear-gradient(orange,yellow); font-family: 'Mansalva', cursive;
+}
+article {grid-area: article; 
+;padding: 15px; background-image: linear-gradient(orange,yellow); font-family: 'Mansalva', cursive;}
+footer {
+    grid-area: footer;background-image: linear-gradient(yellow,orange);
+
+}
+
+
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; 
+}
+
+footer ul{
+  list-style: none;
+  margin: 1em 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+blockquote{text-align: center; padding: 13px; border: 1px solid;}
+
+body{background-color: #CA9900}
+
+h3{text-align: center;
+}
+
+

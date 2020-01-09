@@ -1,0 +1,66 @@
+body, html {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 10% 50% auto 10%;
+    grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "main sect1 sect2"
+    "footer footer footer";
+}
+
+
+
+header {
+    grid-area: header;background-image: linear-gradient(#0C7602,#13DB00); padding: 3em;
+
+}
+header h1{font-size: 3em;font-family: 'Ultra', serif;; text-align: center;color: #00360B;}
+header a{display: block; text-align: center;}
+nav { grid-area:nav; background-color: black
+ padding: 2em; margin: 1.5em; }
+
+aside {
+    grid-area: sect1; background-color: #13DB00;font-family: 'Luckiest Guy', cursive;
+}
+
+
+main {
+    grid-area: main;
+; padding:15px; background-color: #13DB00;font-family: 'Luckiest Guy', cursive;
+}
+article {grid-area: sect2; background-color: #13DB00;font-family: 'Luckiest Guy', cursive;
+;padding: 15px}
+footer {
+    grid-area: footer; background-image: linear-gradient(#13DB00,#0C7602);
+
+}
+
+
+nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul{
+  list-style: none;
+  margin: 1em 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+blockquote{text-align: center; padding: 13px; border: 1px solid; font-family: cursive;}
+
+body{background-color: #0C7602;}
+
+
